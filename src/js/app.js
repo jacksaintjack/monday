@@ -2,8 +2,9 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Router, Route} from 'react-router';
 
-import Header from './header';
-import Login from './login';
+import Header from './components/header';
+import Login from './components/login';
+import Tweets from './components/tweets'
 
 
 class App extends React.Component {
@@ -21,7 +22,8 @@ class App extends React.Component {
 
 const routes = (
   <Router>
-    <Route path="/" component={App}>
+    <Route path="/" component={Tweets}>
+      <Route path ="tweets" component={Tweets} />
       <Route name="login" path="login" component={Login}/>
     </Route>
   </Router>
