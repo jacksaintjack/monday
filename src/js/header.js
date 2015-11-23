@@ -4,11 +4,11 @@ class Header extends React.Component {
   render () {
     return(
       <header className="mainHeader">
-        <h1>Twitts</h1>
-        <img src="#"/>
+        <h1>Twiddz</h1>
+        <img src="http://loremflickr.com/75/75"/>
 
         <section>
-        <a href="#">Login</a>
+          <a href="#/login">Login</a>
         </section>
       </header>
     )
