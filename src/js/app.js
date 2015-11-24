@@ -4,7 +4,7 @@ import {Router, Route} from 'react-router';
 
 import Header from './components/header';
 import Login from './components/login';
-import Tweets from './components/tweets'
+import TweetList from './components/tweetslist'
 
 
 class App extends React.Component {
@@ -22,8 +22,8 @@ class App extends React.Component {
 
 const routes = (
   <Router>
-    <Route path="/" component={Tweets}>
-      <Route path ="tweets" component={Tweets} />
+    <Route path="/" component={TweetList}>
+      <Route path ="tweets" component={TweetList} />
       <Route name="login" path="login" component={Login}/>
     </Route>
   </Router>
